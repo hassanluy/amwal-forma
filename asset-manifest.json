@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/amwal-forma/static/css/main.287b6f12.css",
+    "main.js": "/amwal-forma/static/js/main.1ccc7bbe.js",
+    "static/media/SF-Arabic.dmg": "/amwal-forma/static/media/SF-Arabic.bcb1d329a95430c3015d.dmg",
+    "static/media/amwal-logo.svg": "/amwal-forma/static/media/amwal-logo.0d7fa04d65760f31b6cf11825c6a7f90.svg",
+    "static/media/Arrow-icon.svg": "/amwal-forma/static/media/Arrow-icon.141e3fdaa16668237b0d79f2b36635da.svg",
+    "static/media/share-icon.svg": "/amwal-forma/static/media/share-icon.fd8c08f7e2d0b36fdebc8efdafb88e19.svg",
+    "index.html": "/amwal-forma/index.html",
+    "main.287b6f12.css.map": "/amwal-forma/static/css/main.287b6f12.css.map",
+    "main.1ccc7bbe.js.map": "/amwal-forma/static/js/main.1ccc7bbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.287b6f12.css",
+    "static/js/main.1ccc7bbe.js"
+  ]
+}
