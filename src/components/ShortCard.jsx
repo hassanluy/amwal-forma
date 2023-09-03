@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import BottomArrow from "./BottomArrow";
 
 const ShortCard = () => {
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   return (
     <div className="lg:w-1/2 md:w-3/5 mx-auto lg:mx-auto">
       <BottomArrow />
@@ -40,7 +41,7 @@ const ShortCard = () => {
               type="radio"
               id="html"
               name="fav_language"
-              className="-translate-y-14 form-radio  ring-blue-600 "
+              className="  ring-blue-600 "
             />
             <label htmlFor="html" className="text-blue-600">
               الموافقة على الشروط والأحكام الخاصة بمنتج بطاقات الدفع المسبق
@@ -63,7 +64,10 @@ const ShortCard = () => {
         </div>
         <button
           type="submit"
-          className=" bg-blue-600 px-20 py-2 text-white rounded-xl my-5"
+          className={`bg-blue-600 px-20 py-2 text-white rounded-xl my-5 ${
+            isButtonDisabled && "bg-gray-300 text-gray-500 "
+          }`}
+          disabled={isButtonDisabled ? true : false}
         >
           ارسال
         </button>

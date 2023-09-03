@@ -3,18 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Hero = () => {
   const currentUriLocation = useLocation();
-  const [isShortButtonClicked, setIsShortButtonClicked] = useState(false);
-  const [isLongButtonClicked, setIsLongButtonClicked] = useState(false);
-
-  const shortFormButtonHandler = () => {
-    setIsShortButtonClicked(!isShortButtonClicked);
-    setIsLongButtonClicked(false);
-  };
-  const longFormButtonHandler = () => {
-    setIsLongButtonClicked(!isLongButtonClicked);
-    setIsShortButtonClicked(false);
-  };
-
   return (
     <>
       <div className="text-center flex flex-col lg:w-1/2 md:w-3/5 mx-auto lg:mx-auto">
@@ -23,7 +11,6 @@ const Hero = () => {
         </h1>
         <Link
           to="/shortform"
-          onClick={shortFormButtonHandler}
           className={`${
             currentUriLocation.pathname === "/shortform" &&
             "bg-blue-600 text-white"
@@ -32,10 +19,9 @@ const Hero = () => {
           تقدم بطلب بطاقة مختصر
         </Link>
         <Link
-          to="/longform"
-          onClick={longFormButtonHandler}
+          to="/iqlongform"
           className={`${
-            currentUriLocation.pathname === "/longform" &&
+            currentUriLocation.pathname === "/iqlongform" &&
             "bg-blue-600 text-white"
           } hover:bg-blue-600 hover:text-white  px-4 py-2 outline rounded-lg outline-blue-600 outline-1 text-blue-600 text-lg font-bold`}
         >
