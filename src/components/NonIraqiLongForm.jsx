@@ -3,7 +3,7 @@ import BottomArrow from "./BottomArrow";
 import { Link, useLocation } from "react-router-dom";
 import ImageContainer from "./ImageContainer";
 
-const IraqiLongForm = () => {
+const NonIraqiLongForm = () => {
   const currentUriLocation = useLocation().pathname.slice(1);
   return (
     <div className="lg:w-1/2 md:w-3/5 mx-auto lg:mx-auto">
@@ -70,19 +70,19 @@ const IraqiLongForm = () => {
         <input
           type="text"
           className="bg-neutral-100 py-2 px-8 placeholder:text-neutral-400 rounded-xl my-5"
-          placeholder="رقم البطاقة الوطنية : "
+          placeholder="رقم الجواز : "
           required
         />
         <input
           type="text"
           className="bg-neutral-100 py-2 px-8 placeholder:text-neutral-400 rounded-xl my-5"
-          placeholder="تاريخ إصدار البطاقة الوطنية : "
+          placeholder="جهة اصدار الجواز  : "
           required
         />
         <input
           type="text"
           className="bg-neutral-100 py-2 px-8 placeholder:text-neutral-400 rounded-xl my-5"
-          placeholder="جهة إصدار البطاقة الوطنية :"
+          placeholder="الجنسية :"
           required
         />
         <input
@@ -160,13 +160,9 @@ const IraqiLongForm = () => {
         </div>
         <div>
           <h1 className="font-bold text-lg  my-10">الوثائق الرسمية </h1>
-          <ImageContainer label={"الصورة الامامية للبطاقة الموحدة : "} />
-          <ImageContainer label={"الصورة الخلفية للبطاقة الموحدة : "} />
+          <ImageContainer label={"صورة جواز السفر :"} />
           <ImageContainer
-            label={"الصورة الامامية لإثبات السكن ( بطاقة السكن ):"}
-          />
-          <ImageContainer
-            label={"الصورة الخلفية لإثبات السكن ( بطاقة السكن ):"}
+            label={"صورة تأشيرة الدخول أو الإقامة ( شرط سارية المفعول )   "}
           />
         </div>
         <div className="flex flex-col gap-5 	">
@@ -207,4 +203,4 @@ const IraqiLongForm = () => {
   );
 };
 
-export default IraqiLongForm;
+export default NonIraqiLongForm;

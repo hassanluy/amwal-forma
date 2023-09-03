@@ -6,12 +6,12 @@ const Navbar = () => {
     backdropFilter: "blur(25px)", // Blur effect
     border: "1px solid rgba(255, 255, 255, 0.2)", // Optional border style
     padding: "20px", // Optional padding
-    borderRadius: "10px", // Optional border radius
+    borderRadius: "5rem", // Optional border radius
   };
   return (
     <nav
       style={glassStyle}
-      className="mt-12 bg-[#B0B0B04D] lg:w-3/4 lg:mx-auto p-7 rounded-full flex gap-5 items-center justify-between sticky top-10"
+      className="mt-12 bg-[#B0B0B04D] h-[70px] lg:w-3/4 lg:mx-auto p-7 rounded-full  flex gap-5 items-center justify-between sticky top-10"
     >
       <a
         href=""

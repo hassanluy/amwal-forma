@@ -1,4 +1,5 @@
 import IraqiLongForm from "./components/IraqiLongForm";
+import NonIraqiLongForm from "./components/NonIraqiLongForm";
 import ShortCard from "./components/ShortCard";
 import Form from "./pages/Form";
 import { Routes, Route } from "react-router-dom";
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route element={<ShortCard />} path="shortform" />
         <Route element={<IraqiLongForm />} path="iqlongform" />
+        <Route element={<NonIraqiLongForm />} path="noniqlongform" />
       </Routes>
     </div>
   );
