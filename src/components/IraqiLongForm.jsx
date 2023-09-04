@@ -9,7 +9,7 @@ const IraqiLongForm = () => {
     <div className="lg:w-1/2 md:w-3/5 mx-auto lg:mx-auto">
       <BottomArrow />
       <h1 className="text-blue-600 font-bold text-2xl text-center ">
-        التقدم بطلب بطاقة اموال / النموذج الكامل
+        التقدم بطلب بطاقة اموال/ النموذج الكامل
       </h1>
       <div className="flex gap-5  justify-between mt-16 mb-6">
         <Link
