@@ -4,7 +4,7 @@ const ImageContainer = ({ label }) => {
   const [img, setimg] = useState(null);
   const [filename, setFilename] = useState("اسحب او ارفق هنا");
   return (
-    <>
+    <div>
       <h2 className="text-gray-500 text-xl">{label}</h2>
       <form
         className="h-[250px] overflow-hidden bg-gray-200  w-full border border-dashed cursor-pointer border-gray-400 my-5 border-2 rounded-2xl flex justify-center items-center"
@@ -33,7 +33,7 @@ const ImageContainer = ({ label }) => {
           ) : null}
         </div>
       </form>
-    </>
+    </div>
   );
 };
 
